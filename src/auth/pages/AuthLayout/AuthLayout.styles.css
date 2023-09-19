@@ -17,6 +17,12 @@
     height: 100%;
 }
 
+@media (width < 500px){
+    .responsive{
+        width: 90vw !important;
+    }
+}
+
 
 /* 3  ->  12 */
 /* x  ->  100 */

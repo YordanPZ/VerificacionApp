@@ -51,7 +51,7 @@ const Login = () => {
   return (
     <div>
       <h1>Login</h1>
-      <div className="bg-info rounded p-2 text-white my-4">
+      <div className="bg-info rounded p-2 text-white my-4 text-break">
         <p className="fw-bold text-decoration-underline text-decoration-underline-offset-5">
           To fully test sign up and verification, register your own account. To
           explore the app, you can use:
