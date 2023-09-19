@@ -29,7 +29,7 @@ export const authenticateThunk = () => dispatch => {
     const token = localStorage.getItem('token');
     if (!token) return dispatch(logout());
     setToken(token);
-    axios.get('/users/me', { headers: { Authorization: `Bearer ${token}`}})
+    axios.get('https://loginapp-g0zp.onrender.com/users/me', { headers: { Authorization: `Bearer ${token}`}})
         .then(res => dispatch(setAuth({
             authStatus: 'authenticated',
             user: res.data,

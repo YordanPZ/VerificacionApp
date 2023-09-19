@@ -20,7 +20,7 @@ const ResetPassword = () => {
         try {
             const frontBaseUrl = location.protocol + '//' + location.host;
             const body = { email, frontBaseUrl }
-            await axios.post('/users/reset_password', body);
+            await axios.post('https://loginapp-g0zp.onrender.com/users/reset_password', body);
             navigate('/auth/login');
             dispatch(showNotification({
                 header: 'Email sent!',

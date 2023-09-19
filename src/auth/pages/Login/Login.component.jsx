@@ -17,7 +17,7 @@ const Login = () => {
   const submit = async data => {
     setIsLoading(true);
     try {
-      const res = await axios.post('/users/login', data);
+      const res = await axios.post('https://loginapp-g0zp.onrender.com/users/login', data);
       dispatch(setToken(res.data.token));
       dispatch(setAuth({
         ...res.data, authStatus: 'authenticated'

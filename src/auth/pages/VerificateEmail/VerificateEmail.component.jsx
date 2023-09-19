@@ -10,7 +10,7 @@ const VerificateEmail = () => {
     const [ verifiedStatus, setVerifiedStatus ] = useState('loading'); // 'loading' | 'verified' | 'notVerified'
 
     useEffect(() => {
-        axios.get(`/users/verify/${emailCode}`)
+        axios.get(`https://loginapp-g0zp.onrender.com/users/verify/${emailCode}`)
             .then(() => setVerifiedStatus('verified'))
             .catch(() => {
                 setVerifiedStatus('notVerified')

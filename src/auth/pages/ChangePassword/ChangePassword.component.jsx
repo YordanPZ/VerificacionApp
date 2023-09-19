@@ -26,7 +26,7 @@ const ChangePassword = () => {
             return;
         }
         try {
-            await axios.post(`/users/reset_password/${code}`, { password })
+            await axios.post(`https://loginapp-g0zp.onrender.com/users/reset_password/${code}`, { password })
             dispatch(showNotification({
                 header: 'Password changed!',
                 message: `Login with your new password`,

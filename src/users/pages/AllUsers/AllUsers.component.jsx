@@ -8,7 +8,7 @@ const AllUsers = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('/users')
+    axios.get('https://loginapp-g0zp.onrender.com/users')
       .then(res => setUsers(res.data));
   }, []);
 

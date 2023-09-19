@@ -19,7 +19,7 @@ const SignUp = () => {
     const body = { ...userData, frontBaseUrl }
     setIsLoading(true);
     try {
-      await axios.post('/users', body);
+      await axios.post('https://loginapp-g0zp.onrender.com/users', body);
       navigate('/auth/login');
       dispatch(showNotification({
         header: 'Account created!',
