@@ -1,0 +1,6 @@
+.notification-container {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+}

@@ -1,0 +1,25 @@
+.image-container {
+    display: flex;
+    gap: 20px;
+}
+
+.image-container .input{
+    width: 70%;
+}
+
+.image-container .image-placeholder {
+    border: 1px rgb(77, 172, 249) solid;
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container .image-placeholder img { 
+    display: none; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container .image-placeholder img[src*="http"] { display: block; }

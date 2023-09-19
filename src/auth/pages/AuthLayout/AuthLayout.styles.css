@@ -1,0 +1,22 @@
+
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.video-background {
+    width: 66.66666%;
+    object-fit: cover;
+}
+
+.outlet-container {
+    width: 33.33333%;
+    min-width: 500px;
+    padding: 50px 20px;
+    height: 100%;
+}
+
+
+/* 3  ->  12 */
+/* x  ->  100 */
